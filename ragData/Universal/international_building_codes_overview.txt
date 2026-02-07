@@ -1,0 +1,5 @@
+The International Code Council (ICC) develops model building codes used throughout the United States. These codes establish minimum safety, structural, fire, and energy standards for construction.
+
+States and municipalities adopt ICC codes and may modify them to meet local needs. Common codes include the International Building Code (IBC), International Residential Code (IRC), and International Energy Conservation Code (IECC).
+
+https://codes.iccsafe.org/
