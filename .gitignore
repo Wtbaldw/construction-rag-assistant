@@ -1,0 +1,32 @@
+venv/
+chroma_db/
+__pycache__/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log
+
+# Local DB / vector stores (common for RAG)
+chroma_db/
+.chroma/
+*.sqlite3
+*.db
+
+# Secrets (never commit)
+.env
+.env.*
