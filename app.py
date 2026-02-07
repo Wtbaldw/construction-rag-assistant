@@ -85,7 +85,7 @@ def answer_question(question: str) -> str:
 st.set_page_config(page_title="Construction Q&A Assistant", page_icon="🧱")
 
 st.title("🧱 Construction Q&A Assistant")
-st.write("Ask a question about construction, remodeling, or permits in South Carolina.")
+st.write("Ask a question about our construction, remodeling, or services in South Carolina.")
 
 question = st.text_input("Your question:")
 
