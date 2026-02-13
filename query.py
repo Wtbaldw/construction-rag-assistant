@@ -44,3 +44,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""
+This file tests the retrieval portion of the RAG system without generating a final AI answer.
+ It connects to the persistent ChromaDB vector database, embeds a user’s question using the nomic-embed-text model via Ollama,
+   and performs a semantic similarity search to retrieve the top matching document chunks.
+   Instead of calling a language model to generate a response, it prints the most relevant text segments along with their source metadata (category and filename),
+ allowing you to verify that the vector search and embedding process are working correctly before integrating full answer generation.
+"""

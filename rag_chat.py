@@ -147,3 +147,13 @@ INSTRUCTIONS:
     )
 
     return response["message"]["content"]
+
+"""
+This file contains the core Retrieval-Augmented Generation (RAG) logic for the chatbot.
+ It determines whether a user’s question is construction-related, and if so, embeds the question using nomic-embed-text,
+   retrieves the most relevant document chunks from the ChromaDB vector database, and builds a structured context.
+     That context is then passed to a local LLM (llama3.2:3b via Ollama) along with a carefully designed system prompt that controls tone, safety rules, company references, and output format.
+       The file enforces document-first behavior, restricts discussion to the company “Builders” when supported by the data, and conditionally appends a construction-specific disclaimer.
+         This module acts as the intelligent engine that combines retrieval,
+            prompt engineering, and generation into a complete customer-facing Q&A system.
+"""

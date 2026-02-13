@@ -131,3 +131,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+This file builds the “knowledge base” for the RAG chatbot.
+ It scans the ragData/ folder (including subfolders), reads each text file, and splits the content into overlapping chunks so it’s easier to search.
+   It then converts those chunks into embeddings using the nomic-embed-text model through Ollama,
+    and stores the resulting vectors in a persistent ChromaDB collection (construction_sc).
+ Each chunk is saved with metadata (source file, category folder, chunk index), which helps trace where answers come from and improves retrieval.
+"""
